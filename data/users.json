@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Test User1",
+    "Username": "Testuser1",
+    "Password": "sha256$EfPbsRVf$bc9f7f3e9aed1066d951d257000b37ada060f7448d90ac97e7940f80a053428a"
+  },
+  {
+    "Name": "Test User2",
+    "Username": "Testuser2",
+    "Password": "sha256$XspIGUHB$02f65120fc3d6b444726d5b08e213c05bea4ab386ab010a89496dfdab3eeed3c"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Header": "Name",
+    "accessor": "title"
+  },
+  {
+    "Header": "Price",
+    "accessor": "display_price"
+  },
+  {
+    "Header": "Discount Price",
+    "accessor": "discount"
+  },
+  {
+    "Header": "Expiry Date",
+    "accessor": "display_date"
+  },
+  {
+    "Header": "Is Expire",
+    "accessor": "expire"
+  },
+  {
+    "Header": "Cover Image",
+    "accessor": "filename"
+  }
+]
