@@ -64,6 +64,7 @@ def get_products():
 def search(searchObj,data):
 	product_name = searchObj['product_name']
 	product_price = searchObj['product_price']
+	expiry_date = searchObj['expiry_date']
 	search_data = list()
 	for product in data:
 		conditions = []
@@ -72,6 +73,11 @@ def search(searchObj,data):
 			conditions.append(condition)
 		if product_price != '':
 			condition = product['price'] <= float(product_price)
+			conditions.append(condition)
+		if expiry_date != '':
+			product_expiry = datetime.datetime.strptime(product['expiry'],'%Y-%m-%d')
+			search_date = datetime.datetime.strptime(expiry_date,'%Y-%m-%d')
+			condition = product_expiry == search_date
 			conditions.append(condition)
 		print(conditions)
 		if all(conditions):
