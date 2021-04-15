@@ -79,7 +79,7 @@ def search(searchObj,data):
 			search_date = datetime.datetime.strptime(expiry_date,'%Y-%m-%d')
 			condition = product_expiry == search_date
 			conditions.append(condition)
-		print(conditions)
+		# print(conditions)
 		if all(conditions):
 			search_data.append(product)
 	return search_data
